@@ -47,7 +47,7 @@
  			           return { color: feature.properties.color };
 			        },
 			        onEachFeature: function (feature, layer) {
-        				layer.bindPopup(feature.properties.name + '<br/>Operated by ' + feature.properties.owner + '<br/>Built in ' + feature.properties.commission_year);
+        				layer.bindPopup(feature.properties.name + '<br/>Operated by ' + feature.properties.owner + '<br/>' + feature.properties.commission_year);
 				}
 				}).addTo(sitesMap);
 			});
