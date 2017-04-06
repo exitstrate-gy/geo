@@ -74,7 +74,8 @@
 
 						if(feature.properties.commission_year < this_year){ icon = activeIcon; }
 						else if(feature.properties.decommission_year < this_year){ icon = decommissionedIcon; }
-						
+						else { icon = activeIcon; }
+
 						return new L.marker(latlng, {icon: icon});
 				},
 				}).addTo(sitesMap);
