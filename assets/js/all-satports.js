@@ -12,7 +12,8 @@ var allSatports = [
         ]
       },
       "properties": {
-        "name": "Baikonur Cosmodrome"
+        "name": "Baikonur Cosmodrome",
+        "popupContent": "tha coolest spaceport"
       }
     }, {
       "type": "Feature",

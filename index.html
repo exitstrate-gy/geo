@@ -23,7 +23,7 @@
 		<script src="assets/js/main.js"></script>
 
 		<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
-		<script src="assets/js/all-satellite-launch-locations-geojson.js"></script>
+		<script src="assets/js/all-satports.js"></script>
 		<script>
 			$(window).ready(function() {
 				var sitesMap = L.map('mapid').setView([	33.4314, 20
@@ -46,10 +46,8 @@
 			        style: function (feature) {
  			           return { color: feature.properties.color };
 			        },
-			        onEachFeature: function (feature, layer) {    // does this feature have a property named popupContent?
-    					if (feature.properties && feature.properties.popupContent) {
-        				layer.bindPopup(feature.properties.popupContent);
-    					}
+			        onEachFeature: function (feature, layer) {
+        				layer.bindPopup(feature.properties.name);
 				}
 				}).addTo(sitesMap);
 			});
