@@ -26,15 +26,29 @@
 		<script src="assets/js/all-satports.js"></script>
 		<script>
 			$(window).ready(function() {
+				//Create map
 				var sitesMap = L.map('mapid').setView([	33.4314, 20
 ], 1.5);
 
-				var attribution_string = ""; // 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>';
+				// Define icon colors: see https://github.com/pointhi/leaflet-color-markers
+				var activeIcon = new L.Icon({
+					iconUrl: 'https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-green.png',
+  					shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
+						iconSize: [25, 41],
+						iconAnchor: [12, 41],
+						popupAnchor: [1, -34],
+						shadowSize: [41, 41]
+					});
+				var decommissionedIcon = new L.Icon({
+					iconUrl: 'https://cdn.rawgit.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-grey.png',
+  					shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png',
+						iconSize: [25, 41],
+						iconAnchor: [12, 41],
+						popupAnchor: [1, -34],
+						shadowSize: [41, 41]
+					});				
 
-				//var layer_string = 'https://api.tiles.mapbox.com/v4/mapbox.satellite/{z}/{x}/{y}.png?access_token={pk.eyJ1Ijoidm5heWxvbiIsImEiOiJjajBzczd1MG8wNGJ4MzNyeHg1MGRlMzBmIn0.X6Jn0XgRwEqMlm7flwj3cg}';
-				
-				//layer_string = 'http://{s}.tile.osm.org/{z}/{x}/{y}.png';
-
+				// Add basemap
 				L.tileLayer(
 				'https://api.mapbox.com/styles/v1/mapbox/outdoors-v10/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1Ijoidm5heWxvbiIsImEiOiJjajBzczU1amwwMmcxMnFscm1veG80ZzV3In0.E2I5QUe3l92M1pmGKie8_A', {
 				    tileSize: 512,
@@ -42,13 +56,20 @@
  				   	attribution: '© <a href="https://www.mapbox.com/map-feedback/">Mapbox</a> © <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 					}).addTo(sitesMap);
 
+				// Add features from GeoJSON file
 				L.geoJson(allSatports, {
+					// Define marker color
 			        style: function (feature) {
  			           return { color: feature.properties.color };
 			        },
+					// Create popup
 			        onEachFeature: function (feature, layer) {
         				layer.bindPopup(feature.properties.name + '<br/>Operated by ' + feature.properties.owner + '<br/>' + feature.properties.commission_year);
-				}
+					},
+					// Use circle markers
+					pointToLayer: function(feature, latlng) {
+						return new L.marker(latlng, {icon: activeIcon});
+				},
 				}).addTo(sitesMap);
 			});
 		</script>

@@ -14,7 +14,8 @@ var allSatports = [
       "properties": {
         "name": "Baikonur Cosmodrome",
         "commission_year": "1957-Present",
-        "owner": "Russia"
+        "owner": "Russia",
+        "color": "#f03"
       }
     }, {
       "type": "Feature",
