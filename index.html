@@ -66,7 +66,7 @@
 			        onEachFeature: function (feature, layer) {
         				layer.bindPopup(feature.properties.name + '<br/>Operated by ' + feature.properties.owner + '<br/>' + feature.properties.caption);
 					},
-					// Use circle markers
+					// Use status-dependent markers
 					pointToLayer: function(feature, latlng) {
 						var icon = null;
 
@@ -75,7 +75,7 @@
 						if(feature.properties.commission_year < this_year){ icon = activeIcon; }
 						else if(feature.properties.decommission_year < this_year){ icon = decommissionedIcon; }
 						
-						return new L.marker(latlng, {icon});
+						return new L.marker(latlng, {icon: icon});
 				},
 				}).addTo(sitesMap);
 			});

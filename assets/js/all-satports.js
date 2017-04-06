@@ -15,8 +15,7 @@ var allSatports = [
         "name": "Baikonur Cosmodrome",
         "caption": "1957-Present",
         "owner": "Russia",
-        "icon": "activeIcon"
-        "commission_year": "1957"
+        "commission_year": "1957",
         "decommission_year": "null"
       }
     }, {
@@ -32,7 +31,7 @@ var allSatports = [
         "name": "Broglio Space Centre",
         "caption": "1967-1988",
         "owner": "Italy",
-        "commission_year": "1967"
+        "commission_year": "1967",
         "decommission_year": "1988"
       }
     }, {
