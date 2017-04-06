@@ -75,13 +75,6 @@
 						var start_year = feature.properties.commission_year
 						var end_year = feature.properties.decommission_year
 
-						console.log("start_year: ", start_year);
-						console.log("end_year: ", end_year);
-						console.log("this_year: ", this_year);
-						console.log("(this_year < end_year): ",  (this_year < end_year));
-						console.log("end_year === null: ", end_year === null)
-						console.log("(end_year === null || this_year < end_year): ",  (end_year === null || this_year < end_year));
-
 						if(end_year === null || this_year < end_year){ icon = activeIcon }
 						else{ icon = decommissionedIcon; }
 
