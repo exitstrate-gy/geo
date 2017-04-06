@@ -77,10 +77,13 @@
 
 						console.log("start_year: ", start_year);
 						console.log("end_year: ", end_year);
+						console.log("this_year: ", this_year);
+						console.log("(this_year < end_year): ",  (this_year < end_year));
+						console.log("end_year === null: ", end_year === null)
+						console.log("(end_year === null || this_year < end_year): ",  (end_year === null || this_year < end_year));
 
-						if(end_year != null){ icon = decommissionedIcon; }
-						else if(end_year < this_year){ icon = decommissionedIcon; }
-						else { icon = activeIcon; }
+						if(end_year === null || this_year < end_year){ icon = activeIcon }
+						else{ icon = decommissionedIcon; }
 
 						return new L.marker(latlng, {icon: icon});
 				},

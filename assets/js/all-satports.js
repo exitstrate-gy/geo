@@ -15,8 +15,8 @@ var allSatports = [
         "name": "Baikonur Cosmodrome",
         "caption": "1957-Present",
         "owner": "Russia",
-        "commission_year": "1957",
-        "decommission_year": "null"
+        "commission_year": 1957,
+        "decommission_year": null
       }
     }, {
       "type": "Feature",
@@ -31,8 +31,8 @@ var allSatports = [
         "name": "Broglio Space Centre",
         "caption": "1967-1988",
         "owner": "Italy",
-        "commission_year": "1967",
-        "decommission_year": "1988"
+        "commission_year": 1967,
+        "decommission_year": 1988
       }
     }, {
       "type": "Feature",
@@ -46,7 +46,9 @@ var allSatports = [
       "properties": {
         "name": "Cape Canaveral Air Force Station",
         "caption": "1958-Present",
-        "owner": "United States"
+        "owner": "United States",
+        "commission_year": 1958,
+        "decommission_year": null
       }
     }, {
       "type": "Feature",
@@ -60,7 +62,9 @@ var allSatports = [
       "properties": {
         "name": "China Wenchang Spacecraft Launch Site",
         "caption": "2016-Present",
-        "owner": "China"
+        "owner": "China",
+        "commission_year": 2016,
+        "decommission_year": null
       }
     }, {
       "type": "Feature",
@@ -74,7 +78,9 @@ var allSatports = [
       "properties": {
         "name": "Dombarovsky",
         "caption": "2006-Present",
-        "owner": "Russia"
+        "owner": "Russia",
+        "commission_year": 2006,
+        "decommission_year": null
       }
     }, {
       "type": "Feature",
@@ -88,7 +94,9 @@ var allSatports = [
       "properties": {
         "name": "Guiana Space Centre",
         "caption": "1970-Present",
-        "owner": "France"
+        "owner": "France",
+        "commission_year": 1970,
+        "decommission_year": null
       }
     }, {
       "type": "Feature",
@@ -102,7 +110,9 @@ var allSatports = [
       "properties": {
         "name": "Hammaguir French Special Weapons Test Centre",
         "caption": "1965, 1967",
-        "owner": "France"
+        "owner": "France",
+        "commission_year": 1965,
+        "decommission_year": 1967
       }
     }, {
       "type": "Feature",
@@ -116,7 +126,9 @@ var allSatports = [
       "properties": {
         "name": "Imam Khomeini Space Center",
         "caption": "2009-Present",
-        "owner": "Iran"
+        "owner": "Iran",
+        "commission_year": 2009,
+        "decommission_year": null
       }
     }, {
       "type": "Feature",
@@ -130,7 +142,9 @@ var allSatports = [
       "properties": {
         "name": "Jiuquan Satellite Launch Center",
         "caption": "1970-Present",
-        "owner": "China"
+        "owner": "China",
+        "commission_year": 1970,
+        "decommission_year": null
       }
     }, {
       "type": "Feature",
@@ -144,7 +158,9 @@ var allSatports = [
       "properties": {
         "name": "Kaspustin Yar Cosmodrome",
         "caption": "1962-2008",
-        "owner": "Russia"
+        "owner": "Russia",
+        "commission_year": 1962,
+        "decommission_year": 2008
       }
     }, {
       "type": "Feature",
@@ -158,7 +174,9 @@ var allSatports = [
       "properties": {
         "name": "Kennedy Space Center",
         "caption": "1967-Present",
-        "owner": "United States"
+        "owner": "United States",
+        "commission_year": 1967,
+        "decommission_year": null
       }
     }, {
       "type": "Feature",
@@ -172,7 +190,9 @@ var allSatports = [
       "properties": {
         "name": "Mid-Atlantic Regional Spaceport",
         "caption": "2006-Present",
-        "owner": "United States"
+        "owner": "United States",
+        "commission_year": 2006,
+        "decommission_year": null
       }
     }, {
       "type": "Feature",
@@ -186,7 +206,9 @@ var allSatports = [
       "properties": {
         "name": "Naro Space Center",
         "caption": "2013-Present",
-        "owner": "South Korea"
+        "owner": "South Korea",
+        "commission_year": 2013,
+        "decommission_year": null
       }
     }, {
       "type": "Feature",
@@ -200,7 +222,9 @@ var allSatports = [
       "properties": {
         "name": "Omelek Island",
         "caption": "2008-2009",
-        "owner": "United States"
+        "owner": "United States",
+        "commission_year": 2008,
+        "decommission_year": 2009
       }
     }, {
       "type": "Feature",
@@ -214,7 +238,9 @@ var allSatports = [
       "properties": {
         "name": "Pacific Spaceport Complex",
         "caption": "2001-Present",
-        "owner": "United States"
+        "owner": "United States",
+        "commission_year": 2001,
+        "decommission_year": null
       }
     }, {
       "type": "Feature",
@@ -228,7 +254,9 @@ var allSatports = [
       "properties": {
         "name": "Palmachim Air Force Base",
         "caption": "1988-Present",
-        "owner": "Israel"
+        "owner": "Israel",
+        "commission_year": 1988,
+        "decommission_year": null
       }
     }, {
       "type": "Feature",
@@ -242,7 +270,9 @@ var allSatports = [
       "properties": {
         "name": "Plesetsk Cosmodrome",
         "caption": "1966-Present",
-        "owner": "Russia"
+        "owner": "Russia",
+        "commission_year": 1966,
+        "decommission_year": null
       }
     }, {
       "type": "Feature",
@@ -256,7 +286,9 @@ var allSatports = [
       "properties": {
         "name": "Satish Dhawan Space Centre",
         "caption": "1979-Present",
-        "owner": "India"
+        "owner": "India",
+        "commission_year": 1979,
+        "decommission_year": null
       }
     }, {
       "type": "Feature",
@@ -270,7 +302,9 @@ var allSatports = [
       "properties": {
         "name": "Sohae Satellite Launching Station",
         "caption": "2012-Present",
-        "owner": "North Korea"
+        "owner": "North Korea",
+        "commission_year": 2012,
+        "decommission_year": null
       }
     }, {
       "type": "Feature",
@@ -284,7 +318,9 @@ var allSatports = [
       "properties": {
         "name": "Svobodny Cosmodrome",
         "caption": "1997-2006",
-        "owner": "Russia"
+        "owner": "Russia",
+        "commission_year": 1997,
+        "decommission_year": 2006
       }
     }, {
       "type": "Feature",
@@ -298,7 +334,9 @@ var allSatports = [
       "properties": {
         "name": "Taiyuan Satellite Launch Center",
         "caption": "1988-Present",
-        "owner": "China"
+        "owner": "China",
+        "commission_year": 1988,
+        "decommission_year": null
       }
     }, {
       "type": "Feature",
@@ -312,7 +350,9 @@ var allSatports = [
       "properties": {
         "name": "Tanegashima Space Center",
         "caption": "1975-Present",
-        "owner": "Japan"
+        "owner": "Japan",
+        "commission_year": 1975,
+        "decommission_year": null
       }
     }, {
       "type": "Feature",
@@ -326,7 +366,9 @@ var allSatports = [
       "properties": {
         "name": "Uchinoura Space Center",
         "caption": "1970-Present",
-        "owner": "Japan"
+        "owner": "Japan",
+        "commission_year": 1970,
+        "decommission_year": null
       }
     }, {
       "type": "Feature",
@@ -340,7 +382,9 @@ var allSatports = [
       "properties": {
         "name": "Vandenberg Air Force Base",
         "caption": "1959-Present",
-        "owner": "United States"
+        "owner": "United States",
+        "commission_year": 1959,
+        "decommission_year": null
       }
     }, {
       "type": "Feature",
@@ -354,7 +398,9 @@ var allSatports = [
       "properties": {
         "name": "Vostochny Cosmodrome",
         "caption": "2016-Present",
-        "owner": "Russia"
+        "owner": "Russia",
+        "commission_year": 2016,
+        "decommission_year": null
       }
     }, {
       "type": "Feature",
@@ -368,7 +414,9 @@ var allSatports = [
       "properties": {
         "name": "Wallops Flight Facility",
         "caption": "1961-1985",
-        "owner": "United States"
+        "owner": "United States",
+        "commission_year": 1961,
+        "decommission_year": 1985
       }
     }, {
       "type": "Feature",
@@ -382,7 +430,9 @@ var allSatports = [
       "properties": {
         "name": "RAAF Woomera Test Range",
         "caption": "1967-1971",
-        "owner": "Australia"
+        "owner": "Australia",
+        "commission_year": 1967,
+        "decommission_year": 1971
       }
     }, {
       "type": "Feature",
@@ -396,7 +446,9 @@ var allSatports = [
       "properties": {
         "name": "Xichang Satellite Launch Center",
         "caption": "1984-Present",
-        "owner": "China"
+        "owner": "China",
+        "commission_year": 1984,
+        "decommission_year": null
       }
     }
   ]
