@@ -300,7 +300,7 @@ var allSatports = [
         ]
       },
       "properties": {
-        "name": "Sea Launch Odyssey Mobile Platform",
+        "name": "Sea Launch Ocean Odyssey Mobile Platform",
         "caption": "1999-2013",
         "owner": "Russia",
         "commission_year": 1999,
