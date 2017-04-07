@@ -295,6 +295,22 @@ var allSatports = [
       "geometry": {
         "type": "Point",
         "coordinates": [
+          -154,
+          0
+        ]
+      },
+      "properties": {
+        "name": "Sea Launch Odyssey Mobile Platform",
+        "caption": "1999-2013",
+        "owner": "Russia",
+        "commission_year": 1999,
+        "decommission_year": 2013
+      }
+    }, {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           124.705,
           39.66
         ]
