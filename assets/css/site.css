@@ -19,6 +19,16 @@
 	margin-right: auto;
 }
 
+img  {
+    margin-right: 50px;
+}
+
+ul{}
+
+li{
+	margin-bottom:10px;	
+}
+
 /* Basic */
 
 body {
@@ -369,7 +379,3 @@ header.major h2 + p {
 	#one:before {
 	margin-top: 20px;	}
 
-img  {
-    margin-right: 40px;
-    margin-left: 40 px;
-}
