@@ -62,9 +62,11 @@
  				   	attribution: '© <a href="https://www.mapbox.com/map-feedback/">Mapbox</a> © <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 					}).addTo(sitesMap);
 
+				// Define the marker layer before adding markers
 				var spaceportsLayer = null;
 
 				function loadMarkers(){
+					// If there is already a layer of markers, remove it
 					if(spaceportsLayer){
 						sitesMap.removeLayer(spaceportsLayer);
 					}
@@ -84,18 +86,21 @@
 							var start_year = feature.properties.commission_year
 							var end_year = feature.properties.decommission_year
 							
+							// Don't add a marker if the spaceport hasn’t been built
 							if(start_year > current_year){ return(null); }
+							// Check if the spaceport is active. If it is, give it a green marker
 							else if(end_year === null || current_year < end_year){ 
 								icon = 	activeIcon 
+							// If it's not, give it a gray marker
 							}else{ icon = decommissionedIcon; }
 	
-							return new L.marker(latlng, {icon: icon});
+							return(new L.marker(latlng, {icon: icon}));
 						}
 					});
 
 					sitesMap.addLayer(spaceportsLayer);
 				}
-
+				// Create a slider that steps
 				var stepSlider = document.getElementById('slider-step');
 
 				noUiSlider.create(stepSlider, {
@@ -111,11 +116,12 @@
 						density: (10/6)
 					}
 				});
-
+				// When the slider moves…
 				stepSlider.noUiSlider.on('update', function(values){
 					current_year = values[0]-0;
 					console.log("current_year: ", current_year);
 					console.log("updated: ", values);
+					// …run the loadMarkers function again ^
 					loadMarkers();
 				});
 			});
