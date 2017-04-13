@@ -24,6 +24,19 @@ img  {
     margin-top: 10px;
 }
 
+img.baikonur{
+	margin-left: 50px;
+    margin-top: 10px;
+    width: 60%;
+    float: right;
+}
+
+img.cubesats{
+	float: right;
+    margin-right: 30px;
+    margin-left: 50px;
+}
+
 ul{
 	margin: -0.5em 0 1em 0;
 }
