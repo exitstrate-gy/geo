@@ -2595,6 +2595,9 @@
 
 		#main > section:first-child {
 			border-top: 0;
+			margin-top: 12px;
+			float: left;
+			clear: both;
 		}
 
 /* One */
