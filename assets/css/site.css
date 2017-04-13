@@ -5,14 +5,14 @@
 
 #mapid { 
 	height: 500px; 
-	width: 1050px;
+	width: 950px;
 	margin: 0 auto;
 }
 
 /* NoUISlider */
 
 #slider-step{
-	width: 1050px;
+	width: 925px;
 	margin-top: 20px;
 	margin-bottom: 80px;
 	margin-left: auto;
@@ -371,4 +371,5 @@ header.major h2 + p {
 
 img  {
     margin-right: 40px;
+    margin-left: 40 px;
 }
