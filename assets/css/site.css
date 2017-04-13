@@ -368,3 +368,7 @@ header.major h2 + p {
 
 	#one:before {
 	margin-top: 20px;	}
+
+img  {
+    margin-right: 40px;
+}
