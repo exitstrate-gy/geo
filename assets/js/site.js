@@ -88,8 +88,6 @@ $(window).ready(function() {
 	// When the slider moves…
 	stepSlider.noUiSlider.on('update', function(values){
 		current_year = values[0]-0;
-		console.log("current_year: ", current_year);
-		console.log("updated: ", values);
 		// …run the loadMarkers function again ^
 		loadMarkers();
 	});
